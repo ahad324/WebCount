@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(2, 0, 36);
+    padding: 50px;
+    animation: animate 2s ease infinite alternate;
+}
+
+@keyframes animate {
+    0% {
+        background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%)
+    }
+
+    50% {
+        background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    }
+
+    100% {
+        background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+    }
+}
+
+.main {
+    background: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    box-shadow: 2px 2px 30px black, -2px -2px 30px black;
+}
+
+section {
+    width: 100%;
+    padding: 30px;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+}
+
+.right {
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.right h1 {
+    font-size: 4rem;
+    text-align: center;
+    /* letter-spacing: 3; */
+    color: #c684a0 !important;
+    background: -webkit-linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.right .counter {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: 4rem;
+    font-weight: 700;
+    color: black;
+}
+
+.right h3 {
+    margin: 20px 0px;
+    color: black;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.right form {
+    width: 100%;
+    text-align: center;
+}
+
+.right input {
+    width: 80%;
+    border-radius: 20px;
+    height: 8vh;
+    background: gainsboro;
+    border: none;
+    padding: 10px;
+}
+
+.right button {
+    cursor: pointer;
+    margin: 20px 0px;
+    width: 80%;
+    border-radius: 20px;
+    height: 8vh;
+    font-weight: 600;
+    border: none;
+    background: #5c9ca8 !important;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.right form span h4 {
+    color: rgb(21, 208, 21);
+    display: none;
+    font-weight: 300;
+}
+
+@media (max-width:950px) {
+    .main {
+        display: block;
+        margin-block: 20px;
+        text-align: center;
+    }
+
+    section {
+        padding: 5px;
+    }
+
+    .right {
+        padding: 0;
+    }
+}
+
+@media (max-width:455px) {
+    .right h1 {
+        font-size: 3rem;
+    }
+
+    .right .counter {
+        font-size: 3rem;
+        margin: 30px 10px;
+    }
+}
+
+@media (max-width:380px) {
+    body {
+        padding: 20px;
+    }
+}
+
+@media (max-width:282px) {
+    .right h1 {
+        font-size: 150%;
+    }
+
+    .right .counter {
+        font-size: 2rem;
+        margin: 30px 10px;
+    }
+}

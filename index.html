@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="webcount.css">
+    <title>Website</title>
+</head>
+
+<body>
+    <div class="main">
+        <section class="left">
+            <img src="construction5.jpg" alt="">
+            <img src="coming soon.jpg" style="clip-path: circle();" alt="">
+        </section>
+        <section class="right">
+            <h1>
+                Our Website Is Almost Ready
+            </h1>
+
+            <div class="counter">
+                <span id="days"></span>:
+                <span id="hours"></span>:
+                <span id="minutes"></span>:
+                <span id="seconds"></span>
+            </div>
+
+            <h3>
+                Follow us for update now!
+            </h3>
+
+            <h3> Email: </h3>
+            <form action="#" class="contact_form" onsubmit="sendEmail(); reset(); return false;">
+                <input class="email" type="email" placeholder="Enter a valid emial address" required>
+                <button role="button">SUBMIT</button>
+                <span>
+                    <h4> Your message sent successfully! </h4>
+                </span>
+            </form>
+        </section>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="webcount.js"></script>
+</body>
+
+</html>
